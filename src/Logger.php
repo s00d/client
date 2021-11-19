@@ -15,10 +15,10 @@ use Psr\Log\LogLevel;
  */
 class Logger implements LoggerInterface
 {
-    private string $host;
-    private int $port;
-    private string $clientId;
-    private ?LoggerInterface $logger;
+    private $host;
+    private $port;
+    private $clientId;
+    private $logger;
 
     /**
      * Logger constructor.

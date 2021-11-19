@@ -12,11 +12,11 @@ namespace PhpMqtt\Client;
  */
 class PublishedMessage extends PendingMessage
 {
-    private string $topicName;
-    private string $message;
-    private int $qualityOfService;
-    private bool $retain;
-    private bool $received = false;
+    private $topicName;
+    private $message;
+    private $qualityOfService;
+    private $retain;
+    private $received = false;
 
     /**
      * Creates a new published message object.

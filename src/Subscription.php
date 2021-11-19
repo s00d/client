@@ -11,10 +11,10 @@ namespace PhpMqtt\Client;
  */
 class Subscription
 {
-    private string $topicFilter;
-    private string $regexifiedTopicFilter;
-    private int $qualityOfService;
-    private ?\Closure $callback;
+    private $topicFilter;
+    private $regexifiedTopicFilter;
+    private $qualityOfService;
+    private $callback;
 
     /**
      * Creates a new subscription object.

@@ -20,8 +20,8 @@ class ConnectingToBrokerFailedException extends MqttClientException
     const EXCEPTION_CONNECTION_SOCKET_ERROR        = 1000;
     const EXCEPTION_CONNECTION_TLS_ERROR           = 2000;
 
-    private ?string $connectionErrorCode;
-    private ?string $connectionErrorMessage;
+    private $connectionErrorCode;
+    private $connectionErrorMessage;
 
     /**
      * ConnectingToBrokerFailedException constructor.

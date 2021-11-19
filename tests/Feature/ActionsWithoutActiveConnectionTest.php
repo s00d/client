@@ -30,7 +30,7 @@ class ActionsWithoutActiveConnectionTest extends TestCase
         $client = new MqttClient($this->mqttBrokerHost, $this->mqttBrokerPort, 'test-not-connected');
 
         $this->expectException(ClientNotConnectedToBrokerException::class);
-        $client->subscribe('foo/bar', fn () => true);
+        $client->subscribe('foo/bar', function () { return true; });
     }
 
     public function test_throws_exception_when_topic_is_unsubscribed_without_connecting_to_broker(): void

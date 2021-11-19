@@ -20,16 +20,16 @@ use PhpMqtt\Client\Subscription;
  */
 class MemoryRepository implements Repository
 {
-    private int $nextMessageId = 1;
+    private $nextMessageId = 1;
 
     /** @var array<int, PendingMessage> */
-    private array $pendingOutgoingMessages = [];
+    private $pendingOutgoingMessages = [];
 
     /** @var array<int, PendingMessage> */
-    private array $pendingIncomingMessages = [];
+    private $pendingIncomingMessages = [];
 
     /** @var array<int, Subscription> */
-    private array $subscriptions = [];
+    private $subscriptions = [];
 
     /**
      * {@inheritDoc}

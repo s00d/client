@@ -16,9 +16,6 @@ class DataTransferException extends MqttClientException
 
     /**
      * DataTransferException constructor.
-     *
-     * @param int    $code
-     * @param string $error
      */
     public function __construct(int $code, string $error)
     {

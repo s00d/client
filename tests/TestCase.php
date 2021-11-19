@@ -11,13 +11,13 @@ namespace Tests;
  */
 abstract class TestCase extends \PHPUnit\Framework\TestCase
 {
-    protected string $mqttBrokerHost;
-    protected int $mqttBrokerPort;
-    protected int $mqttBrokerTlsPort;
-    protected int $mqttBrokerTlsWithClientCertificatePort;
+    protected $mqttBrokerHost;
+    protected $mqttBrokerPort;
+    protected $mqttBrokerTlsPort;
+    protected $mqttBrokerTlsWithClientCertificatePort;
 
-    protected bool $skipTlsTests;
-    protected string $tlsCertificateDirectory;
+    protected $skipTlsTests;
+    protected $tlsCertificateDirectory;
 
     /**
      * {@inheritdoc}

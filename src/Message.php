@@ -16,14 +16,14 @@ use PhpMqtt\Client\Contracts\MqttClient;
  */
 class Message
 {
-    private MessageType $type;
-    private int $qualityOfService;
-    private ?int $messageId  = null;
-    private ?string $topic   = null;
-    private ?string $content = null;
+    private $type;
+    private $qualityOfService;
+    private $messageId  = null;
+    private $topic   = null;
+    private $content = null;
 
     /** @var int[] */
-    private array $acknowledgedQualityOfServices = [];
+    private $acknowledgedQualityOfServices = [];
 
     /**
      * Message constructor.

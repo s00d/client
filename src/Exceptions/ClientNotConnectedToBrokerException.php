@@ -16,8 +16,6 @@ class ClientNotConnectedToBrokerException extends DataTransferException
 
     /**
      * ClientNotConnectedToBrokerException constructor.
-     *
-     * @param string $error
      */
     public function __construct(string $error)
     {

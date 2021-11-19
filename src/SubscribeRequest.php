@@ -12,7 +12,7 @@ namespace PhpMqtt\Client;
 class SubscribeRequest extends PendingMessage
 {
     /** @var Subscription[] */
-    private array $subscriptions;
+    private $subscriptions;
 
     /**
      * Creates a new subscribe request message.
